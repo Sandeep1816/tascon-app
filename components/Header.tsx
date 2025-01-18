@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-// import { Menu, X, Twitter, Linkedin } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -22,17 +22,9 @@ export default function Header() {
             <Link href="/blogs" className="text-elephant-600 hover:text-sky-600">Blogs</Link>
             <Link href="/contact" className="text-elephant-600 hover:text-sky-600">Contact Us</Link>
           </nav>
-          {/* <div className="hidden md:flex space-x-2">
-            <a href="https://twitter.com/tascongroup" target="_blank" rel="noopener noreferrer" className="text-elephant-600 hover:text-sky-400">
-              <Twitter size={24} />
-            </a>
-            <a href="https://linkedin.com/company/tascongroup" target="_blank" rel="noopener noreferrer" className="text-elephant-600 hover:text-sky-600">
-              <Linkedin size={24} />
-            </a>
-          </div> */}
-          {/* <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button> */}
+          </button>
         </div>
         {isMenuOpen && (
           <nav className="mt-4 md:hidden">
@@ -52,4 +44,3 @@ export default function Header() {
     </header>
   )
 }
-
