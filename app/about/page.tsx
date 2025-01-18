@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { ChevronDown, Users, Lightbulb, Network, MapPin } from 'lucide-react'
+import { ChevronDown, Users, Lightbulb, Network } from 'lucide-react'
 
 export default function About() {
   const [activeSection, setActiveSection] = useState<string | null>(null)
@@ -84,7 +84,7 @@ export default function About() {
         >
           <h2 className="text-3xl font-semibold text-elephant-700 mb-6 text-center">Who We Are</h2>
           <p className="text-elephant-600 mb-8 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-            We are the world's fastest-growing B2B event company, orchestrating success through expertly curated conferences and unforgettable special events, providing a strategic gateway to global business growth.
+            We are the world&apos;s fastest-growing B2B event company, orchestrating success through expertly curated conferences and unforgettable special events, providing a strategic gateway to global business growth.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {[

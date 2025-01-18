@@ -160,7 +160,7 @@ export default function Home() {
             href="/contact"
             className="bg-white text-sky-600 px-8 py-4 rounded-full shadow-lg hover:bg-elephant-50 transition-all duration-300 transform hover:scale-105 inline-block font-semibold text-lg"
           >
-            Let's Connect
+            Let&apos;s Connect
           </Link>
         </div>
       </section>
