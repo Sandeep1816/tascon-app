@@ -1,73 +1,120 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="text-black">
+    <div className="text-elephant-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-sky-600 to-blue-500 py-20 text-white ">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">TASCON Group</h1>
-          <p className="text-xl md:text-2xl mb-8 animate-slide-up">
-            Connecting Ideas, Creating Impact
-          </p>
-          <Link
-            href="/about"
-            className="bg-white text-sky-600 px-6 py-3 rounded-md shadow-lg hover:bg-elephant-50 transition-transform transform hover:scale-105 inline-block"
-          >
-            Learn More
-          </Link>
+      <section className="relative bg-gradient-to-r from-blue-700 to-teal-500 py-20 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]" />
+        <div className="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white/10 to-transparent" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl text-white">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+              Elevate Your Business with TASCON
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 animate-slide-up opacity-90">
+              Connecting visionaries, fostering innovation, and driving industry transformation through world-class B2B events.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/about"
+                className="bg-white text-sky-600 px-8 py-4 rounded-full shadow-lg hover:bg-elephant-50 transition-all duration-300 transform hover:scale-105 inline-block text-center font-semibold"
+              >
+                Discover TASCON
+              </Link>
+              <Link
+                href="/contact"
+                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300 inline-block text-center font-semibold"
+              >
+                Get in Touch
+              </Link>
+            </div>
+          </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent" />
       </section>
 
       {/* About Us Section */}
-      <section className="py-16 bg-white">
+      <section className="py-40 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-elephant-800 mb-6 text-center">About Us</h2>
-          <p className="text-lg text-elephant-600 leading-relaxed text-center mb-8">
-            TASCON specializes in connecting businesses with opportunities. We represent leading
-            industry experts worldwide, leveraging our expertise to curate highly focused B2B
-            events.
-          </p>
-          <div className="text-center">
-            <Link
-              href="/about"
-              className="text-sky-600 hover:underline text-lg"
-            >
-              Discover more
-            </Link>
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <h2 className="text-4xl font-bold text-elephant-800 mb-6">About TASCON Group</h2>
+              <p className="text-lg text-elephant-600 leading-relaxed mb-8">
+                TASCON specializes in connecting businesses with opportunities. We represent leading
+                industry experts worldwide, leveraging our expertise to curate highly focused B2B
+                events that drive innovation and growth.
+              </p>
+              <ul className="space-y-4">
+                {['Global Network', 'Industry Expertise', 'Innovative Solutions', 'Measurable Impact'].map((item, index) => (
+                  <li key={index} className="flex items-center text-elephant-700">
+                    <CheckCircle className="text-sky-500 mr-2" size={20} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href="/about"
+                className="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold mt-6 group"
+              >
+                Learn more about us
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+              </Link>
+            </div>
+            <div className="lg:w-1/2">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="TASCON Group Team"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-xl"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Our Services Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-elephant-50 py-40">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-elephant-800 mb-6 text-center">Our Services</h2>
+          <h2 className="text-4xl font-bold text-elephant-800 mb-12 text-center">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 title: 'Conferences & Summits',
                 description:
-                  'We bring together globally recognized speakers who are experts in their fields, offering years of experience and knowledge.',
+                  'Bringing together globally recognized speakers and industry experts to share knowledge and insights.',
+                icon: '🎙️',
               },
               {
                 title: 'Workshops & Training',
                 description:
-                  'We provide top-tier, dynamic international trainers across a wide range of industries.',
+                  'Providing top-tier, dynamic international trainers across a wide range of industries for skill development.',
+                icon: '🧠',
               },
               {
                 title: 'Customized & Managed Events',
                 description:
-                  'TASCON\'s customized events are proven to drive business growth and reduce costs with high standards of execution.',
+                  'Tailored events designed to drive business growth and foster meaningful connections.',
+                icon: '🤝',
               },
             ].map((service, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col"
               >
-                <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
-                <p className="text-elephant-600">{service.description}</p>
+                <div className="text-4xl mb-4">{service.icon}</div>
+                <h3 className="text-2xl font-semibold mb-4 text-elephant-800">{service.title}</h3>
+                <p className="text-elephant-600 flex-grow">{service.description}</p>
+                <Link
+                  href="/services"
+                  className="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold mt-6 group"
+                >
+                  Learn more
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                </Link>
               </div>
             ))}
           </div>
@@ -75,10 +122,10 @@ export default function Home() {
       </section>
 
       {/* Industries Section */}
-      <section className="py-16 bg-white">
+      <section className="py-40 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-elephant-800 mb-6 text-center">Industries We Serve</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <h2 className="text-4xl font-bold text-elephant-800 mb-12 text-center">Industries We Serve</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[
               'Manufacturing',
               'Bank & Finance',
@@ -92,9 +139,9 @@ export default function Home() {
             ].map((industry, index) => (
               <div
                 key={index}
-                className="bg-elephant-100 p-4 rounded-md text-center hover:bg-sky-50 transition-colors"
+                className="bg-elephant-50 p-6 rounded-xl text-center hover:bg-sky-50 transition-colors duration-300 border border-elephant-100"
               >
-                <p className="text-elephant-800 font-medium">{industry}</p>
+                <p className="text-elephant-800 font-semibold text-lg">{industry}</p>
               </div>
             ))}
           </div>
@@ -102,21 +149,22 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-r from-sky-600 to-blue-500 py-16">
+      <section className="bg-gradient-to-r from-sky-600 to-blue-500 py-20">
         <div className="container mx-auto px-4 text-center text-white">
-          <h2 className="text-4xl font-bold mb-4">Ready to Connect?</h2>
-          <p className="text-lg mb-8">
+          <h2 className="text-4xl font-bold mb-6">Ready to Elevate Your Business?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
             Join us in our mission to inspire and deliver world-class conferences and summits
-            globally.
+            that drive innovation and growth across industries.
           </p>
           <Link
             href="/contact"
-            className="bg-white text-sky-600 px-6 py-3 rounded-md shadow-lg hover:bg-elephant-50 transition-transform transform hover:scale-105 inline-block"
+            className="bg-white text-sky-600 px-8 py-4 rounded-full shadow-lg hover:bg-elephant-50 transition-all duration-300 transform hover:scale-105 inline-block font-semibold text-lg"
           >
-            Contact Us
+            Let's Connect
           </Link>
         </div>
       </section>
     </div>
   );
 }
+
