@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 
 export default function About() {
   return (
@@ -15,7 +15,7 @@ export default function About() {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-elephant-700 mb-4">Who We Are</h2>
         <p className="text-elephant-600 mb-4">
-          We are the world's fastest growing B2B event company, orchestrating success through expertly curated conferences and unforgettable special events, providing a strategic gateway to global business growth.
+          We are the world&apos;s fastest growing B2B event company, orchestrating success through expertly curated conferences and unforgettable special events, providing a strategic gateway to global business growth.
         </p>
       </section>
 
@@ -29,7 +29,7 @@ export default function About() {
       <section>
         <h2 className="text-2xl font-semibold text-elephant-700 mb-4">How TASCON is Influencing Businesses</h2>
         <ul className="list-disc pl-6 text-elephant-600">
-          <li className="mb-2">Driving Innovation: Our events provide cutting-edge insights to keep businesses relevant and effective in today's landscape.</li>
+          <li className="mb-2">Driving Innovation: Our events provide cutting-edge insights to keep businesses relevant and effective in today&apos;s landscape.</li>
           <li className="mb-2">Building Relationships: We bring together diverse experts, creating valuable networking opportunities.</li>
           <li className="mb-2">Enabling Investments: Our high-impact events connect founders and entrepreneurs with top tech investors.</li>
           <li>Prime Venues: We host events at top business destinations worldwide, ensuring an exceptional experience.</li>

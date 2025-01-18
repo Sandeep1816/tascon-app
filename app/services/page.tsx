@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 
 export default function Services() {
   const services = [
@@ -33,7 +33,7 @@ export default function Services() {
       <section>
         <h2 className="text-2xl font-semibold text-elephant-700 mb-4">Audience Generation</h2>
         <p className="text-elephant-600">
-          A dedicated team is exclusively assigned to attract a delegate audience for each customized event. This team is thoroughly trained on the client's products, solutions, and business details, ensuring they are well-equipped to recruit the right delegate profiles for your event, conference, or summit.
+          A dedicated team is exclusively assigned to attract a delegate audience for each customized event. This team is thoroughly trained on the client&apos;s products, solutions, and business details, ensuring they are well-equipped to recruit the right delegate profiles for your event, conference, or summit.
         </p>
       </section>
     </div>
