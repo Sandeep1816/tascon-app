@@ -30,9 +30,9 @@ export default function Header() {
               <Linkedin size={24} />
             </a>
           </div> */}
-          <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          {/* <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          </button> */}
         </div>
         {isMenuOpen && (
           <nav className="mt-4 md:hidden">
