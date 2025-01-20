@@ -77,7 +77,7 @@ export default function Contact() {
           >
             <h2 className="text-2xl font-semibold text-elephant-700 mb-4">Get in Touch</h2>
             <p className="text-elephant-600 mb-6">
-              We'd love to hear from you. Please fill out this form and we will get in touch with you shortly.
+              We&apos;d love to hear from you. Please fill out this form and we will get in touch with you shortly.
             </p>
             <div className="space-y-4">
               <div className="flex items-center">

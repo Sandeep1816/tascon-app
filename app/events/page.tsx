@@ -146,9 +146,9 @@ export default function Events() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <h2 className="text-3xl font-semibold text-elephant-800 mb-4">Can't find what you're looking for?</h2>
+          <h2 className="text-3xl font-semibold text-elephant-800 mb-4">Can&apos;t find what you&apos;re looking for?</h2>
           <p className="text-elephant-600 mb-8">
-            We're constantly adding new events. Sign up for our newsletter to stay updated!
+            We&apos;re constantly adding new events. Sign up for our newsletter to stay updated!
           </p>
           <Link
             href="/contact"
