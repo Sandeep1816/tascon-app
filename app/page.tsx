@@ -4,11 +4,10 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="text-elephant-900">
+    <div className="">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-700 to-teal-500 py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]" />
-        <div className="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white/10 to-transparent" />
+      <section className="py-40 bg-slate-800">
+        <div className="" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl text-white">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
@@ -20,7 +19,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/about"
-                className="bg-white text-sky-600 px-8 py-4 rounded-full shadow-lg hover:bg-elephant-50 transition-all duration-300 transform hover:scale-105 inline-block text-center font-semibold"
+                className="bg-white text-gray-900 px-8 py-4 rounded-full shadow-lg hover:bg-elephant-50 transition-all duration-300 transform hover:scale-105 inline-block text-center font-semibold"
               >
                 Discover TASCON
               </Link>
@@ -103,11 +102,11 @@ export default function Home() {
             ].map((service, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col"
+                className="bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-2xl font-semibold mb-4 text-elephant-800">{service.title}</h3>
-                <p className="text-elephant-600 flex-grow">{service.description}</p>
+                <h3 className="text-2xl font-semibold mb-4 text-white">{service.title}</h3>
+                <p className="text-white flex-grow">{service.description}</p>
                 <Link
                   href="/services"
                   className="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold mt-6 group"
@@ -149,7 +148,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-r from-sky-600 to-blue-500 py-20">
+      <section className="bg-gray-900 py-20">
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="text-4xl font-bold mb-6">Ready to Elevate Your Business?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">

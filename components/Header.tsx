@@ -9,15 +9,15 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-gradient-to-r from-blue-700 to-teal-500 py-4 shadow-lg">
+    <header className=" bg-gray-900  py-4 shadow-lg ">
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo and Brand Name */}
         <div className="flex items-center space-x-3">
           <Image 
             src="/images/2x.png" // Replace with your logo path
             alt="TASCON Logo" 
-            width={50} 
-            height={50} 
+            width={100} 
+            height={100} 
             // className="h-10 w-10"
           />
           {/* <Link href="/" className="text-2xl font-bold text-white">
@@ -32,8 +32,8 @@ export default function Header() {
           <Link href="/services" className="text-white hover:text-teal-200">Our Services</Link>
           <Link href="/industries" className="text-white hover:text-teal-200">Industries</Link>
           <Link href="/events" className="text-white hover:text-teal-200">Upcoming Events</Link>
-          <Link href="/partners" className="text-white hover:text-teal-200">Partners</Link>
-          <Link href="/blogs" className="text-white hover:text-teal-200">Blogs</Link>
+          {/* <Link href="/partners" className="text-white hover:text-teal-200">Partners</Link> */}
+          {/* <Link href="/blogs" className="text-white hover:text-teal-200">Blogs</Link> */}
           <Link href="/contact" className="text-white hover:text-teal-200">Contact Us</Link>
         </nav>
 
