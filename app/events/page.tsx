@@ -9,7 +9,7 @@ import { Calendar, MapPin, Users, Search } from "lucide-react"
 const upcomingEvents = [
   {
     name: "Future DigiTech Summit 2025",
-    date: "January 15-17, 2025",
+    date: "May 28-29, 2025",
     location: "Silicon Valley, CA",
     description: "Explore the latest in digital transformation, AI, and emerging technologies.",
     attendees: 1500,

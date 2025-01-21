@@ -32,7 +32,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent" />
+        <div className="" />
       </section>
 
       {/* About Us Section */}

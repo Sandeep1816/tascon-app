@@ -48,7 +48,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <nav className="mt-4 md:hidden bg-teal-600 text-white p-4 rounded-md">
+        <nav className="mt-5 md:hidden bg-gray-900 text-white p-5 rounded-md">
           <ul className="flex flex-col space-y-4">
             <li><Link href="/" className="hover:text-teal-200">Home</Link></li>
             <li><Link href="/about" className="hover:text-teal-200">About Us</Link></li>
