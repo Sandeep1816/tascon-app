@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ChevronDown, Users, Lightbulb, Network } from 'lucide-react'
+import logo from '@/app/icon.png'
 
 export default function About() {
   const [activeSection, setActiveSection] = useState<string | null>(null)
@@ -27,7 +28,7 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          About TASCON Group
+          About TASCON
         </motion.h1>
         
         <motion.div 
@@ -44,11 +45,11 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <motion.div {...fadeInUp}>
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src={logo}
               alt="TASCON Group Team"
               width={600}
               height={400}
-              className="rounded-lg shadow-xl"
+              className="rounded-lg shadow-xl p-5 bg-black"
             />
           </motion.div>
           <motion.div {...fadeInUp}>

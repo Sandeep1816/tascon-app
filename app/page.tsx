@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle } from 'lucide-react';
+import logo from '@/app/icon.png'
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-bold text-elephant-800 mb-6">About TASCON Group</h2>
+              <h2 className="text-4xl font-bold text-elephant-800 mb-6">About TASCON</h2>
               <p className="text-lg text-elephant-600 leading-relaxed mb-8">
                 TASCON specializes in connecting businesses with opportunities. We represent leading
                 industry experts worldwide, leveraging our expertise to curate highly focused B2B
@@ -64,11 +65,11 @@ export default function Home() {
             </div>
             <div className="lg:w-1/2">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src={logo}
                 alt="TASCON Group Team"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl bg-gray-800 p-5"
               />
             </div>
           </div>
@@ -124,7 +125,7 @@ export default function Home() {
       <section className="py-40 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-elephant-800 mb-12 text-center">Industries We Serve</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
             {[
               'Manufacturing',
               'Bank & Finance',
@@ -138,9 +139,9 @@ export default function Home() {
             ].map((industry, index) => (
               <div
                 key={index}
-                className="bg-elephant-50 p-6 rounded-xl text-center hover:bg-sky-50 transition-colors duration-300 border border-elephant-100"
+                className="bg-gray-800 p-6 rounded-xl text-center hover:bg-sky-300 transition-colors duration-300 border border-elephant-100"
               >
-                <p className="text-elephant-800 font-semibold text-lg">{industry}</p>
+                <p className="text-white font-semibold text-lg">{industry}</p>
               </div>
             ))}
           </div>

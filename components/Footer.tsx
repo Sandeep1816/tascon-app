@@ -37,8 +37,8 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
               <li><Link href="/events" className="hover:text-sky-400">Upcoming Events</Link></li>
-              <li><Link href="/partners" className="hover:text-sky-400">Partners</Link></li>
-              <li><Link href="/blogs" className="hover:text-sky-400">Blogs</Link></li>
+              {/* <li><Link href="/partners" className="hover:text-sky-400">Partners</Link></li> */}
+              {/* <li><Link href="/blogs" className="hover:text-sky-400">Blogs</Link></li> */}
               <li><Link href="/contact" className="hover:text-sky-400">Contact Us</Link></li>
             </ul>
           </div>
@@ -46,8 +46,10 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <p className="mb-2">123 Business Street</p>
             <p className="mb-2">City, State 12345</p>
-            <p className="mb-2">Phone: (123) 456-7890</p>
-            <p>Email: info@tascongroup.com</p>
+            <p className="mb-2">Phone: +91 7090117711</p>
+            <p>Email: info@tasconmedia.com<br></br>
+            tarannum.s@tasconmedia.com
+            </p>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
