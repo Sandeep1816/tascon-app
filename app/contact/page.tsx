@@ -66,7 +66,7 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Contact Us
+          Enquiry
         </motion.h1>
 
         <div className="grid md:grid-cols-2 gap-12">

@@ -44,8 +44,8 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <p className="mb-2">123 Business Street</p>
-            <p className="mb-2">City, State 12345</p>
+            {/* <p className="mb-2">123 Business Street</p>
+            <p className="mb-2">City, State 12345</p> */}
             <p className="mb-2">Phone: +91 7090117711</p>
             <p>Email: info@tasconmedia.com<br></br>
             tarannum.s@tasconmedia.com
