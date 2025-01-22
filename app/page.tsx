@@ -2,39 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import logo from '@/app/icon.png'
+// import about from '@/public/images/global-logistics-network-hinrich-foundation.jpg'
+import HeroSection from '@/components/hero-section';
 
 export default function Home() {
   return (
     <div className="">
       {/* Hero Section */}
-      <section className="py-40 bg-slate-800">
-        <div className="" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl text-white">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-              Elevate Your Business with TASCON
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 animate-slide-up opacity-90">
-              Connecting visionaries, fostering innovation, and driving industry transformation through world-class B2B events.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/about"
-                className="bg-white text-gray-900 px-8 py-4 rounded-full shadow-lg hover:bg-elephant-50 transition-all duration-300 transform hover:scale-105 inline-block text-center font-semibold"
-              >
-                Discover TASCON
-              </Link>
-              <Link
-                href="/contact"
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300 inline-block text-center font-semibold"
-              >
-                Get in Touch
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="" />
-      </section>
+     <HeroSection />
 
       {/* About Us Section */}
       <section className="py-40 bg-white">

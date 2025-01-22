@@ -13,6 +13,7 @@ export default function Header() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo and Brand Name */}
         <div className="flex items-center space-x-3">
+        <Link href="/" >
           <Image 
             src="/images/2x.png" // Replace with your logo path
             alt="TASCON Logo" 
@@ -20,6 +21,7 @@ export default function Header() {
             height={100} 
             // className="h-10 w-10"
           />
+          </Link>
           {/* <Link href="/" className="text-2xl font-bold text-white">
             TASCON
           </Link> */}

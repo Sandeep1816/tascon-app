@@ -4,7 +4,8 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ChevronDown, Users, Lightbulb, Network } from 'lucide-react'
-import logo from '@/app/icon.png'
+import logo from '@/public/images/Low_HKTDC202211112.jpg'
+import mission from '@/public/images/images.png'
 
 export default function About() {
   const [activeSection, setActiveSection] = useState<string | null>(null)
@@ -45,7 +46,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <motion.div {...fadeInUp}>
             <Image
-              src={logo}
+              src={mission}
               alt="TASCON Group Team"
               width={600}
               height={400}

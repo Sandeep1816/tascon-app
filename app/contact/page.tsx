@@ -82,7 +82,7 @@ export default function Contact() {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-sky-500 mr-2" />
-                <span className="text-elephant-600">+91 7090117711</span>
+                <span className="text-elephant-600">+91 9741744869</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-sky-500 mr-2" />
