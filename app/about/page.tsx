@@ -173,12 +173,12 @@ export default function About() {
         transition={{ duration: 0.5 }}
       >
         <motion.h1
-          className="text-3xl font-bold text-elephant-800 mb-2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          className="text-4xl md:text-5xl font-extrabold mb-2 bg-gradient-to-r from-elephant-800 to-sky-600 text-transparent bg-clip-text tracking-tight leading-none"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          Tarannum
+          Tarannum Shariff
         </motion.h1>
         <motion.p
           className="text-xl text-elephant-600"
