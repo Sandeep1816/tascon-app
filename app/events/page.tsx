@@ -8,7 +8,7 @@ import { Calendar, MapPin, Users, Search } from "lucide-react"
 import img1 from '@/public/images/About.jpg'
 import img2 from '@/public/images/Artificial-Intelligence-and-Machine-Learning.png'
 import img3 from '@/public/images/Low_HKTDC202211112.jpg'
-import img4 from '@/public/images/TheDigitalSummit_Louisa_Dahl.jpg'
+// import img4 from '@/public/images/TheDigitalSummit_Louisa_Dahl.jpg'
 import img5 from '@/public/images/global-logistics-network-hinrich-foundation.jpg'
 import img6 from '@/public/images/shutterstock_494274349.avif'
 import img7 from '@/public/images/Artboard 2.jpg'

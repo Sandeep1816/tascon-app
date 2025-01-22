@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ChevronDown, Users, Lightbulb, Network } from 'lucide-react'
-import logo from '@/public/images/Low_HKTDC202211112.jpg'
+// import logo from '@/public/images/Low_HKTDC202211112.jpg'
 import mission from '@/public/images/images.png'
 
 export default function About() {
