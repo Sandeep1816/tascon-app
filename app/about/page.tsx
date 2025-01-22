@@ -165,24 +165,7 @@ export default function About() {
           </div>
         </motion.section>
 
-        <motion.div 
-          className="mt-16 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-        >
-          <h2 className="text-3xl font-semibold text-elephant-700 mb-6">Ready to Experience TASCON?</h2>
-          <p className="text-elephant-600 mb-8 max-w-2xl mx-auto">
-            Join us at our next event and see firsthand how TASCON is shaping the future of B2B interactions.
-          </p>
-          <a 
-            href="/contact" 
-            className="inline-block bg-sky-600 text-white px-8 py-3 rounded-full hover:bg-sky-700 transition-colors duration-300"
-          >
-            Contact Us
-          </a>
-        </motion.div>
-        <div className="min-h-screen bg-gradient-to-b from-sky-50 to-white flex items-center justify-center p-4">
+        <div className="m-3 bg-gradient-to-b from-sky-50 to-white flex items-center justify-center p-4">
       <motion.div
         className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full text-center"
         initial={{ opacity: 0, y: 20 }}
@@ -213,6 +196,58 @@ export default function About() {
         >
           <p className="text-elephant-500 text-sm">Leading TASCON Group towards excellence in B2B events</p>
         </motion.div>
+      </motion.div>
+    </div>
+
+        <motion.div 
+          className="mt-16 text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+        >
+          <h2 className="text-3xl font-semibold text-elephant-700 mb-6">Ready to Experience TASCON?</h2>
+          <p className="text-elephant-600 mb-8 max-w-2xl mx-auto">
+            Join us at our next event and see firsthand how TASCON is shaping the future of B2B interactions.
+          </p>
+          <a 
+            href="/contact" 
+            className="inline-block bg-sky-600 text-white px-8 py-3 rounded-full hover:bg-sky-700 transition-colors duration-300"
+          >
+            Contact Us
+          </a>
+        </motion.div>
+          <div className="min-h-screen bg-gradient-to-b from-sky-50 to-white flex items-center justify-center p-4">
+      <motion.div
+        className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full text-center"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.h1
+          className="text-3xl font-bold text-elephant-800 mb-2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+        >
+          Tarannum
+        </motion.h1>
+        <motion.p
+          className="text-xl text-elephant-600"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
+          Designation: Managing Director
+        </motion.p>
+        <motion.div
+          className="mt-6 border-t border-elephant-200 pt-4"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ delay: 0.6, duration: 0.5 }}
+        >
+          <p className="text-elephant-500 text-sm">Leading TASCON Group towards excellence in B2B events</p>
+        </motion.div>
+        
       </motion.div>
     </div>
       </div>
