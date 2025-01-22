@@ -194,7 +194,7 @@ export default function About() {
           animate={{ scaleX: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          <p className="text-elephant-500 text-sm">Leading TASCON Group towards excellence in B2B events</p>
+          <p className="text-elephant-500 text-sm">Leading TASCON Media towards excellence in B2B events</p>
         </motion.div>
       </motion.div>
     </div>
