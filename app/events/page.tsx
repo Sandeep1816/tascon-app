@@ -5,62 +5,61 @@ import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Calendar, MapPin, Users, Search } from "lucide-react"
-import img1 from '@/public/images/About.jpg'
-import img2 from '@/public/images/Artificial-Intelligence-and-Machine-Learning.png'
-import img3 from '@/public/images/Low_HKTDC202211112.jpg'
-// import img4 from '@/public/images/TheDigitalSummit_Louisa_Dahl.jpg'
-import img5 from '@/public/images/global-logistics-network-hinrich-foundation.jpg'
-import img6 from '@/public/images/shutterstock_494274349.avif'
-import img7 from '@/public/images/Artboard 2.jpg'
+import img1 from "@/public/images/About.jpg"
+import img2 from "@/public/images/Artificial-Intelligence-and-Machine-Learning.png"
+import img3 from "@/public/images/Low_HKTDC202211112.jpg"
+import img5 from "@/public/images/global-logistics-network-hinrich-foundation.jpg"
+import img6 from "@/public/images/shutterstock_494274349.avif"
+import img7 from "@/public/images/Artboard 2.jpg"
 
 const upcomingEvents = [
   {
     name: "Future DigiTech Summit 2025",
     date: "May 28-29, 2025",
-    location: "Silicon Valley, CA",
+    location: "Malaysia",
     description: "Explore the latest in digital transformation, AI, and emerging technologies.",
-    attendees: 1500,
-    image:img7,
+    attendees: "500+" ,
+    image: img7,
   },
   {
     name: "Patients' Experience Summit 2025",
-    date: "March 22-24, 2025",
-    location: "Boston, MA",
+    date: "TBA",
+    location: "Dubai",
     description: "Revolutionizing healthcare through patient-centered innovations and technologies.",
-    attendees: 1200,
+    attendees:"500+" ,
     image: img3,
   },
   {
     name: "Banking & Fintech Summit 2025",
-    date: "May 10-12, 2025",
-    location: "New York City, NY",
+    date: "TBA",
+    location: "South Africa",
     description: "Shaping the future of finance with cutting-edge fintech solutions and strategies.",
-    attendees: 1800,
+    attendees: "500+" ,
     image: img1,
   },
   {
-    name: "Sustainable Energy Conference 2025",
-    date: "July 5-7, 2025",
-    location: "Copenhagen, Denmark",
-    description: "Driving the global transition to renewable energy and sustainable practices.",
-    attendees: 2000,
-    image: img6,
+    name: "Global Education Technology Conference 2025",
+    date: "TBA",
+    location: "TBA",
+    description: "Transforming education through innovative technologies and pedagogical approaches.",
+    attendees: "500+" ,
+    image: img5,
   },
   {
-    name: "AI & Machine Learning Expo 2025",
-    date: "September 18-20, 2025",
-    location: "Tokyo, Japan",
-    description: "Showcasing groundbreaking AI and ML applications across industries.",
-    attendees: 2500,
+    name: "Cybersecurity World Forum 2025",
+    date: "TBA",
+    location: "TBA",
+    description: "Addressing the latest challenges and solutions in global cybersecurity.",
+    attendees: "500+" ,
     image: img2,
   },
   {
-    name: "Global Supply Chain Forum 2025",
-    date: "November 8-10, 2025",
-    location: "Singapore",
-    description: "Optimizing supply chains through innovation, resilience, and sustainability.",
-    attendees: 1600,
-    image: img5,
+    name: "Sustainable Finance Summit 2025",
+    date: "TBA",
+    location: "TBA",
+    description: "Exploring the intersection of finance and sustainability for a greener future.",
+    attendees: "500+" ,
+    image: img6,
   },
 ]
 
@@ -132,12 +131,6 @@ export default function Events() {
                   <Users className="w-5 h-5 mr-2" />
                   <span>{event.attendees} expected attendees</span>
                 </div>
-                {/* <Link
-                  href={`/events/${encodeURIComponent(event.name)}`}
-                  className="bg-sky-600 text-white px-6 py-2 rounded-full hover:bg-sky-700 transition duration-300 inline-block"
-                >
-                  Learn More
-                </Link> */}
               </div>
             </motion.div>
           ))}
@@ -153,7 +146,9 @@ export default function Events() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <h2 className="text-3xl font-semibold text-elephant-800 mb-4">Can&apos;t find what you&apos;re looking for?</h2>
+          <h2 className="text-3xl font-semibold text-elephant-800 mb-4">
+            Can&apos;t find what you&apos;re looking for?
+          </h2>
           <p className="text-elephant-600 mb-8">
             We&apos;re constantly adding new events. Sign up for our newsletter to stay updated!
           </p>

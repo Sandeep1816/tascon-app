@@ -1,28 +1,20 @@
-import Image from "next/image"
 import Link from "next/link"
-import bg from '@/public/images/TheDigitalSummit_Louisa_Dahl.jpg'
-import img from '@/public/images/36983_1568404251.png'
-// import img from '@/'
 
 export default function HeroSection() {
   return (
-    <section className="relative py-60 overflow-hidden">
-      {/* Background Image */}
-      <Image
-        src={bg}
-        alt="Background"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-        className="absolute inset-0 z-0"
-      />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Video */}
+      <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-0">
+        <source src="/video/2x.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-slate-900/70 z-10" />
 
-      <div className="container mx-auto px-4 relative z-20">
-        <div className="flex flex-col lg:flex-row items-center justify-between">
-          <div className="max-w-2xl text-white mb-12 lg:mb-0">
+      <div className="container mx-auto px-4 relative z-20 flex items-center">
+        <div className="flex flex-col lg:flex-row items-center justify-between w-full">
+          <div className="max-w-2xl text-white mb-12 lg:mb-0 lg:mr-8">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">Elevate Your Business with TASCON</h1>
             <p className="text-xl md:text-2xl mb-8 animate-slide-up opacity-90">
               Connecting visionaries, fostering innovation, and driving industry transformation through world-class B2B
@@ -47,13 +39,7 @@ export default function HeroSection() {
           {/* Floating Image */}
           <div className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg transform rotate-6 scale-105" />
-            <Image
-              src={img}
-              alt="TASCON Group Team"
-              width={800}
-              height={600}
-              className="relative rounded-lg shadow-2xl"
-            />
+            {/* Image component is commented out as per the original code */}
           </div>
         </div>
       </div>

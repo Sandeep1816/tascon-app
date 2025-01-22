@@ -94,7 +94,7 @@ export default function Contact() {
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-sky-500 mr-2" />
-                <span className="text-elephant-600">123 Business Street, City, Country</span>
+                <span className="text-elephant-600">50 2nd floor, MM Road, Frazer Town, Bengaluru, Karnataka 560005</span>
               </div>
             </div>
           </motion.div>
