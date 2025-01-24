@@ -10,18 +10,19 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">TASCON Group</h3>
             <p className="mb-4">Connecting Ideas, Creating Impact</p>
             <div className="flex space-x-4">
-              <a href="https://twitter.com/tascongroup" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
-                <Twitter size={20} />
-              </a>
-              <a href="https://linkedin.com/company/tascongroup" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
+            <a href="https://www.linkedin.com/company/tascon-media/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
                 <Linkedin size={20} />
               </a>
-              <a href="https://facebook.com/tascongroup" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
-                <Facebook size={20} />
+              <a href="https://x.com/tasconmedia" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
+                <Twitter size={20} />
               </a>
-              <a href="https://instagram.com/tascongroup" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
+              <a href="https://www.instagram.com/tasconmedia/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
                 <Instagram size={20} />
               </a>
+              <a href="https://www.facebook.com/tasconmedia/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
+                <Facebook size={20} />
+              </a>
+             
             </div>
           </div>
           <div>
