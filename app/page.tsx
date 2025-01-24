@@ -44,7 +44,7 @@ export default function Home() {
                 alt="TASCON Group Team"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-xl bg-gray-800 p-5"
+                className="rounded-lg shadow-xl p-5"
               />
             </div>
           </div>
