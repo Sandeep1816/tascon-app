@@ -12,7 +12,7 @@ const MaxpoExhibitions = () => {
           height={80}
           className="mx-auto mb-4"
         />
-        <h2 className="text-3xl font-semibold text-gray-900">Owned by Maxpo Exhibitions</h2>
+        <h2 className="text-3xl font-semibold text-gray-900">Group Company of Maxpo Exhibitions</h2>
         <p className="text-gray-600 mt-4">
           Maxpo Exhibitions is a premier organizer of global events, fostering 
           connections in real estate, technology, and investment sectors.
