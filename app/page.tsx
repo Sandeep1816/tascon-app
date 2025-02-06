@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 import logo from '@/app/icon.png'
 // import about from '@/public/images/global-logistics-network-hinrich-foundation.jpg'
 import HeroSection from '@/components/hero-section';
+import MaxpoExhibitions from '@/components/MaxpoExhibitions';
 
 export default function Home() {
   return (
@@ -122,7 +123,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+        <MaxpoExhibitions />
       {/* Call to Action */}
       <section className="bg-gray-900 py-20">
         <div className="container mx-auto px-4 text-center text-white">
