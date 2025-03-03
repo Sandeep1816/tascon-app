@@ -1,77 +1,92 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { Calendar, MapPin, Users, Search } from "lucide-react";
-import img1 from "@/public/images/About.jpg";
-import img2 from "@/public/images/Artificial-Intelligence-and-Machine-Learning.png";
-import img3 from "@/public/images/Low_HKTDC202211112.jpg";
-import img5 from "@/public/images/global-logistics-network-hinrich-foundation.jpg";
-import img6 from "@/public/images/shutterstock_494274349.avif";
-import img7 from "@/public/images/Artboard 2.jpg";
+import { useState } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { motion } from "framer-motion"
+import { Calendar, MapPin, Users, Search } from "lucide-react"
+// import img2 from "@/public/images/Artificial-Intelligence-and-Machine-Learning.png"
+// import img3 from "@/public/images/Low_HKTDC202211112.jpg"
+
+// import img5 from "@/public/images/global-logistics-network-hinrich-foundation.jpg"
+// import img6 from "@/public/images/shutterstock_494274349.avif"
+import img7 from "@/public/images/Artboard 2.jpg"
+import img3 from "@/public/images/Cyber Security Consortium 2025.jpg"
+import img4 from "@/public/images/cyber security 2.jpg"
+// import img5 from "@/public/images/cybersecurity-threats.jpeg"
+import img5 from "@/public/images/Global Fintech Summit & Awards 20252.jpg"
+import img6 from "@/public/images/digitech 2.jpg"
+import img8 from "@/public/images/Future DigiTech Summit & Tech Visionary Awards 2025.jpg"
+import img9 from "@/public/images/Global Fintech Summit.jpg"
 
 const upcomingEvents = [
   {
-    name: "Future DigiTech Summit 2025",
+    name: "Future DigiTech Summit & Tech Visionary Awards 2025",
     date: "May 28-29, 2025",
-    location: "Malaysia",
+    location: "Pullman, KL, Malaysia",
     description: "Explore the latest in digital transformation, AI, and emerging technologies.",
     attendees: "500+",
     image: img7,
     link: "https://www.futuredigitechsummit.com/",
   },
   {
-    name: "Patients' Experience Summit 2025",
-    date: "TBA",
-    location: "Dubai",
-    description: "Revolutionizing healthcare through patient-centered innovations and technologies.",
-    attendees: "500+",
-    image: img3,
-  },
-  {
-    name: "Banking & Fintech Summit 2025",
-    date: "TBA",
-    location: "South Africa",
+    name: "Global Fintech Summit & Awards 2025",
+    date: "July 10-11, 2025",
+    location: "Johannesburg, South Africa",
     description: "Shaping the future of finance with cutting-edge fintech solutions and strategies.",
-    attendees: "500+",
-    image: img1,
-  },
-  {
-    name: "Global Education Technology Conference 2025",
-    date: "TBA",
-    location: "TBA",
-    description: "Transforming education through innovative technologies and pedagogical approaches.",
     attendees: "500+",
     image: img5,
   },
   {
-    name: "Cybersecurity World Forum 2025",
-    date: "TBA",
-    location: "TBA",
+    name: "Cyber Security Consortium 2025",
+    date: "September 2025",
+    location: "Malaysia",
     description: "Addressing the latest challenges and solutions in global cybersecurity.",
     attendees: "500+",
-    image: img2,
+    image: img3,
   },
   {
-    name: "Sustainable Finance Summit 2025",
-    date: "TBA",
-    location: "TBA",
-    description: "Exploring the intersection of finance and sustainability for a greener future.",
+    name: "Future DigiTech Summit & Tech Visionary Awards 2025",
+    date: "October 2025",
+    location: "Singapore",
+    description: "Transforming businesses through innovative technologies and digital strategies.",
     attendees: "500+",
     image: img6,
   },
-];
+  {
+    name: "Global Fintech Summit & Awards 2025",
+    date: "October 2025",
+    location: "Morocco",
+    description: "Exploring the intersection of finance and technology for a digital future.",
+    attendees: "500+",
+    image: img9,
+  },
+  {
+    name: "Future DigiTech Summit & Tech Visionary Awards 2025",
+    date: "November 2025",
+    location: "Turkey",
+    description: "Showcasing digital innovation and recognizing tech visionaries across industries.",
+    attendees: "500+",
+    image: img8,
+  },
+  {
+    name: "Cyber Security Consortium 2025",
+    date: "November 2025",
+    location: "Saudi Arabia",
+    description: "Bringing together cybersecurity experts to address emerging threats and solutions.",
+    attendees: "500+",
+    image: img4,
+  },
+]
 
 export default function Events() {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("")
 
   const filteredEvents = upcomingEvents.filter(
     (event) =>
       event.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      event.location.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+      event.location.toLowerCase().includes(searchTerm.toLowerCase()),
+  )
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-50 to-white">
@@ -99,10 +114,7 @@ export default function Events() {
             className="w-full p-4 pl-12 pr-4 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-sky-500"
             aria-label="Search events"
           />
-          <Search
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"
-            aria-hidden="true"
-          />
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" aria-hidden="true" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -114,36 +126,32 @@ export default function Events() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-                {event.link ? (
-                  <Link href={event.link} target="_blank" rel="noopener noreferrer">
-                       <Image
-                src={event.image || "/placeholder.svg"}
-                alt={event.name}
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover"
-              />
-                  </Link>
-                   ) : (
-              <Image
-                src={event.image || "/placeholder.svg"}
-                alt={event.name}
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover"
-              />
-            )}
+              {event.link ? (
+                <Link href={event.link} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={event.image || "/placeholder.svg"}
+                    alt={event.name}
+                    width={400}
+                    height={200}
+                    className="w-full h-48 object-cover"
+                  />
+                </Link>
+              ) : (
+                <Image
+                  src={event.image || "/placeholder.svg"}
+                  alt={event.name}
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover"
+                />
+              )}
               <div className="p-6">
                 {event.link ? (
                   <Link href={event.link} target="_blank" rel="noopener noreferrer">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-                      {event.name}
-                    </h2>
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-2">{event.name}</h2>
                   </Link>
                 ) : (
-                  <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-                    {event.name}
-                  </h2>
+                  <h2 className="text-2xl font-semibold text-gray-800 mb-2">{event.name}</h2>
                 )}
                 <p className="text-gray-600 mb-4">{event.description}</p>
                 <div className="flex items-center text-gray-500 mb-2">
@@ -173,9 +181,7 @@ export default function Events() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-            Can&apos;t find what you&apos;re looking for?
-          </h2>
+          <h2 className="text-3xl font-semibold text-gray-800 mb-4">Can&apos;t find what you&apos;re looking for?</h2>
           <p className="text-gray-600 mb-8">
             We&apos;re constantly adding new events. Sign up for our newsletter to stay updated!
           </p>
@@ -188,5 +194,6 @@ export default function Events() {
         </motion.div>
       </div>
     </div>
-  );
+  )
 }
+
