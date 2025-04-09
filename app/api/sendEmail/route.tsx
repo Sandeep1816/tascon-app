@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    // Email content
+    // Email content.
     const mailOptions = {
         from: "Tascon<chvamshi03@gmail.com>",
         to: "info@tasconmedia.com, tarannum.s@tasconmedia.com",
