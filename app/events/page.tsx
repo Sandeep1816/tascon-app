@@ -36,6 +36,7 @@ const upcomingEvents = [
     description: "Shaping the future of finance with cutting-edge fintech solutions and strategies.",
     attendees: "500+",
     image: img5,
+    link: "https://www.globalfintechsummit.net/",
   },
   {
     name: "Cyber Security Consortium 2025",
@@ -52,6 +53,7 @@ const upcomingEvents = [
     description: "Transforming businesses through innovative technologies and digital strategies.",
     attendees: "500+",
     image: img6,
+    link: "https://www.futuredigitechsummit.com/",
   },
   {
     name: "Global Fintech Summit & Awards 2025",
@@ -60,6 +62,7 @@ const upcomingEvents = [
     description: "Exploring the intersection of finance and technology for a digital future.",
     attendees: "500+",
     image: img9,
+    link: "https://www.globalfintechsummit.net/",
   },
   {
     name: "Future DigiTech Summit & Tech Visionary Awards 2025",
@@ -68,6 +71,7 @@ const upcomingEvents = [
     description: "Showcasing digital innovation and recognizing tech visionaries across industries.",
     attendees: "500+",
     image: img8,
+    link: "https://www.futuredigitechsummit.com/",
   },
   {
     name: "Cyber Security Consortium 2025",
