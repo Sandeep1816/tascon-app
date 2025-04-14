@@ -22,7 +22,7 @@ import img9 from "@/public/images/Global Fintech Summit.jpg"
 const upcomingEvents = [
   {
     name: "Future DigiTech Summit & Tech Visionary Awards 2025",
-    date: "May 28-29, 2025",
+    date: "May 28 - 29, 2025",
     location: "Pullman, KL, Malaysia",
     description: "Explore the latest in digital transformation, AI, and emerging technologies.",
     attendees: "500+",
@@ -31,7 +31,7 @@ const upcomingEvents = [
   },
   {
     name: "Global Fintech Summit & Awards 2025",
-    date: "July 10-11, 2025",
+    date: "July 28 - 29, 2025",
     location: "Johannesburg, South Africa",
     description: "Shaping the future of finance with cutting-edge fintech solutions and strategies.",
     attendees: "500+",
