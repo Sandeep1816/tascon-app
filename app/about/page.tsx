@@ -4,8 +4,9 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ChevronDown, Users, Lightbulb, Network } from 'lucide-react'
-// import logo from '@/public/images/Low_HKTDC202211112.jpg'
+
 import mission from '@/public/images/111.jpg'
+import tarannumImg from '@/public/images/tarunam.jpg'
 
 export default function About() {
   const [activeSection, setActiveSection] = useState<string | null>(null)
@@ -59,7 +60,7 @@ export default function About() {
               Our mission is to redefine the B2B events landscape through:
             </p>
             <ul className="space-y-4">
-              {[
+              {[ 
                 "Rigorous market research to identify emerging trends",
                 "Active involvement of industry thought leaders",
                 "Meticulous selection of specialized vendors",
@@ -80,16 +81,13 @@ export default function About() {
           </motion.div>
         </div>
 
-        <motion.section 
-          className="mb-20"
-          {...fadeInUp}
-        >
+        <motion.section className="mb-20" {...fadeInUp}>
           <h2 className="text-3xl font-semibold text-elephant-700 mb-6 text-center">Who We Are</h2>
           <p className="text-elephant-600 mb-8 text-lg leading-relaxed text-center max-w-3xl mx-auto">
             We are the world&apos;s fastest-growing B2B event company, orchestrating success through expertly curated conferences and unforgettable special events, providing a strategic gateway to global business growth.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
+            {[ 
               { icon: Users, title: "Expert Team", description: "A diverse group of industry professionals" },
               { icon: Lightbulb, title: "Innovative Approach", description: "Cutting-edge event concepts and execution" },
               { icon: Network, title: "Global Network", description: "Connections spanning across industries and borders" }
@@ -108,10 +106,7 @@ export default function About() {
           </div>
         </motion.section>
 
-        <motion.section 
-          className="mb-20"
-          {...fadeInUp}
-        >
+        <motion.section className="mb-20" {...fadeInUp}>
           <h2 className="text-3xl font-semibold text-elephant-700 mb-6 text-center">Our Collaborations</h2>
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <p className="text-elephant-600 mb-6 text-lg leading-relaxed">
@@ -133,7 +128,7 @@ export default function About() {
         <motion.section {...fadeInUp}>
           <h2 className="text-3xl font-semibold text-elephant-700 mb-6 text-center">How TASCON is Influencing Businesses</h2>
           <div className="space-y-4">
-            {[
+            {[ 
               { title: "Driving Innovation", content: "Our events provide cutting-edge insights to keep businesses relevant and effective in today's landscape." },
               { title: "Building Relationships", content: "We bring together diverse experts, creating valuable networking opportunities." },
               { title: "Enabling Investments", content: "Our high-impact events connect founders and entrepreneurs with top tech investors." },
@@ -165,40 +160,58 @@ export default function About() {
           </div>
         </motion.section>
 
+        {/* Tarannum Shariff Profile Card */}
         <div className="m-3 flex items-center justify-center p-4">
-      <motion.div
-        className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full text-center"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <motion.h1
-          className="text-4xl md:text-5xl font-extrabold mb-2 bg-gradient-to-r from-elephant-800 to-sky-600 text-transparent bg-clip-text tracking-tight leading-none"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-        >
-          Tarannum Shariff
-        </motion.h1>
-        <motion.p
-          className="text-xl text-elephant-600"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-        >
-          Designation: Managing Director
-        </motion.p>
-        <motion.div
-          className="mt-6 border-t border-elephant-200 pt-4"
-          initial={{ scaleX: 0 }}
-          animate={{ scaleX: 1 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-        >
-          <p className="text-elephant-500 text-sm">Leading TASCON Media towards excellence in B2B events</p>
-        </motion.div>
-      </motion.div>
-    </div>
+          <motion.div
+            className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            {/* Profile Image */}
+            <motion.div
+              className="flex justify-center mb-4"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+            >
+              <Image
+                src={tarannumImg}
+                alt="Tarannum Shariff"
+                width={120}
+                height={120}
+                className="rounded-full border-4 border-white shadow-md"
+              />
+            </motion.div>
 
+            <motion.h1
+              className="text-4xl md:text-5xl font-extrabold mb-2 bg-gradient-to-r from-elephant-800 to-sky-600 text-transparent bg-clip-text tracking-tight leading-none"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              Tarannum Shariff
+            </motion.h1>
+            <motion.p
+              className="text-xl text-elephant-600"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+            >
+              Designation: Managing Director
+            </motion.p>
+            <motion.div
+              className="mt-6 border-t border-elephant-200 pt-4"
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+            >
+              <p className="text-elephant-500 text-sm">Leading TASCON Media towards excellence in B2B events</p>
+            </motion.div>
+          </motion.div>
+        </div>
+
+        {/* CTA */}
         <motion.div 
           className="mt-16 text-center"
           initial={{ opacity: 0 }}
@@ -221,4 +234,3 @@ export default function About() {
     </div>
   )
 }
-
