@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Twitter, Linkedin, Facebook, Instagram } from 'lucide-react'
+import { Twitter, Linkedin, Facebook, Instagram, Youtube } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -21,6 +21,9 @@ export default function Footer() {
               </a>
               <a href="https://www.facebook.com/tasconmedia/" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
                 <Facebook size={20} />
+              </a>
+              <a href="https://www.youtube.com/channel/UC25vYRe7OFq30mwLAit5O4A" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
+                <Youtube size={20} />
               </a>
              
             </div>
@@ -47,7 +50,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <p className="mb-2">50 2nd floor, MM Road, Frazer Town, Bengaluru, Karnataka 560005</p>
-            {/* <p className="mb-2">City, State 12345</p> */}
+            {/* <p className="mb-2">City, State 123456</p> */}
             <p className="mb-2">Phone: +91 9741744869</p>
             <p>Email: info@tasconmedia.com<br></br>
             tarannum.s@tasconmedia.com

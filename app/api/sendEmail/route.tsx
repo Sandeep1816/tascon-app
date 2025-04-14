@@ -15,9 +15,9 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    // Email content
+    // Email content.
     const mailOptions = {
-        from: "chvamshi03@gmail.com",
+        from: "Tascon<chvamshi03@gmail.com>",
         to: "info@tasconmedia.com, tarannum.s@tasconmedia.com",
         subject: "New Enquiry from TASCON Contact Form",
         html: `
