@@ -125,7 +125,7 @@ const ContactForm: React.FC = () => {
           className="mt-1 h-5 w-5 text-indigo-600 border-gray-300 rounded"
         />
         <label htmlFor="termsAccepted" className="text-sm text-gray-700">
-          I confirm that I have read, understand and accept the <a href="/policy" target="_blank" className="text-blue-600 underline">Terms & Conditions</a> and <a href="/policy" target="_blank" className="text-blue-600 underline">Privacy Policy</a> of Tascon Media.
+          I confirm that I have read, understand and accept the <a href="https://www.maxpo.ae/privacy" target="_blank" className="text-blue-600 underline">Terms & Conditions</a> and <a href="https://www.maxpo.ae/privacy" target="_blank" className="text-blue-600 underline">Privacy Policy</a> of Tascon Media.
         </label>
       </div>
       {errors.termsAccepted && <p className="mt-1 text-sm text-red-600">{errors.termsAccepted.message}</p>}
