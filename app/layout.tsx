@@ -1,10 +1,10 @@
 import type { Metadata } from "next"
 import { Geist, Azeret_Mono as Geist_Mono } from "next/font/google"
-import Script from "next/script" // Add this import
+import Script from "next/script"
 import "./globals.css"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
-import type React from "react" // Added import for React
+import type React from "react"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,24 +28,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head />
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Header />
         {children}
         <Footer />
 
-        {/* Google Analytics Script */}
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-TC73ZF9XXS" />
+        {/* Google Analytics Script (G-JRN4ZVVN62) */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-JRN4ZVVN62"
+        />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
-            gtag('config', 'G-TC73ZF9XXS');
+            gtag('config', 'G-JRN4ZVVN62');
           `}
         </Script>
       </body>
     </html>
   )
 }
-
